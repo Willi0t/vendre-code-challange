@@ -1,0 +1,128 @@
+.cardContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  border-radius: 0.6rem;
+  width: 20rem;
+  height: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.imgFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 6.875rem;
+  height: 6.875rem;
+  position: absolute;
+  top: 5.6rem;
+  border-radius: 50%;
+}
+
+.cardContainer img {
+  border-radius: 50%;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.CardHead {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+.CardHead h3 {
+  margin-top: 1.5rem;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+/* top right bottom left*/
+.CardBodyWrapper {
+  overflow: hidden;
+  height: 70%;
+  background-color: white;
+}
+
+.CardBodyContainer {
+  padding: 4rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardBodyContainer h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+.CardBodyContainer p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #c0c0c0;
+}
+
+.CardBodyContainer a {
+  color: black;
+  text-decoration: none;
+}
+/* top right bottom left*/
+.IconContainer {
+  padding: 2rem 0rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 20%;
+}
+
+.IconContainer svg {
+  cursor: pointer;
+  fill: black;
+  opacity: 20%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/* Header colors */
+
+#headBackground1 {
+  background-color: #faedcb;
+}
+
+#headBackground2 {
+  background-color: #c9e4de;
+}
+
+#headBackground3 {
+  background-color: #c6def1;
+}
+
+#headBackground4 {
+  background-color: #dbcdf0;
+}
+
+#headBackground5 {
+  background-color: #f7d9c4;
+}
+
+#headBackground6 {
+  background-color: #ffadad;
+}
+
+#headBackground7 {
+  background-color: #fdffb6;
+}
+
+#headBackground8 {
+  background-color: #c6def1;
+}
