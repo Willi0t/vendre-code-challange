@@ -37,11 +37,11 @@ function App() {
   return (
     <div className="App">
       <div className="AppContainer">
-        {users.map((user, index) => (
+        {users.map((user) => (
           <UserCard
             key={user.id}
             user={user}
-            background={`headBackground${(index % 7) + 1}`}
+            background={`headBackground${(user.id % 7) + 1}`}
             title={dummyTitleData[user.id]}
           />
         ))}

@@ -25,12 +25,13 @@ function UserCard({ user, background, title }) {
       <div className="imgFrame">
         <img src={user.avatar} alt={user.first_name} />
       </div>
-      <div className="CardHead" id={background}>
-        <h3>{title}</h3>
-      </div>
+      <div className="CardHead" id={background}></div>
       <div className="CardBodyWrapper">
         <div className="CardBodyContainer">
-          <h3>{`${user.first_name} ${user.last_name}`}</h3>
+          <div className="descriptionHead">
+            <h3>{`${user.first_name} ${user.last_name}`}</h3>
+            <h4>{title}</h4>
+          </div>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
