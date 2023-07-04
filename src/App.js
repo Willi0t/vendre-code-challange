@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import UserCard from "./components/UserCard";
 import "./App.css";
+import arrowIcon from "./assets/Icons/arrowIcon.png";
+import { ReactComponent as ArrowIcon } from "./assets/Icons/arrowIcon.svg";
+import userMapping from "./userdata";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -18,41 +21,30 @@ function App() {
 
         // Combine the users from both responses
         const allUsers = [...data1.data, ...data2.data];
-        const usersWithTitles = allUsers.map((user, index) => ({
-          ...user,
-          title: titleMapping[(index % 12) + 1],
-        }));
+        const usersWithTitles = allUsers.map((user, index) => {
+          if (userMapping[user.first_name + user.last_name]) {
+            return {
+              ...user,
+              ...userMapping[user.first_name + user.last_name],
+            };
+          }
+        });
+
         setUsers(usersWithTitles);
       } catch (error) {
         console.log("Error fetching users:", error);
       }
     };
 
-    // Define the title mapping
-    const titleMapping = {
-      1: "UX-Designer",
-      2: "Human resources",
-      3: "CEO",
-      4: "Fullstack Developer",
-      5: "Product owner",
-      6: "Backend developer",
-      7: "Project Manager",
-      8: "Copy writer",
-      9: "Frontend developer",
-      10: "Project Manager",
-      11: "UX-Designer",
-      12: "Frontend developer",
-    };
-
     fetchUsers();
   }, []);
 
   const nextPage = () => {
-    setCurrentPage((prevPage) => prevPage + 1);
+    setCurrentPage((prevPage) => (prevPage % 2) + 1);
   };
 
   const prevPage = () => {
-    setCurrentPage((prevPage) => prevPage - 1);
+    setCurrentPage((prevPage) => (prevPage + 1) % 2 || 2);
   };
 
   const indexOfLastCard = currentPage * cardsPerPage;
@@ -66,18 +58,15 @@ function App() {
           <UserCard
             key={user.id}
             user={user}
-            background={`headBackground${(user.id % 7) + 1}`}
+            background={user.color}
             title={user.title}
+            personalText={user.personalText}
           />
         ))}
-      </div>
-      <div className="CarouselControls">
-        <button disabled={currentPage === 1} onClick={prevPage}>
-          Previous
-        </button>
-        <button disabled={indexOfLastCard >= users.length} onClick={nextPage}>
-          Next
-        </button>
+        <div className="PageButtons">
+          <ArrowIcon onClick={prevPage}></ArrowIcon>
+          <ArrowIcon onClick={prevPage}></ArrowIcon>
+        </div>
       </div>
     </div>
   );

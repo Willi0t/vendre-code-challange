@@ -1,10 +1,9 @@
 import React from "react";
 import "./userCard.css";
-import { ReactComponent as EmailIcon } from "../assets/Icons/email.svg";
-import { ReactComponent as GithubIcon } from "../assets/Icons/github.svg";
-import { ReactComponent as LinkedinIcon } from "../assets/Icons/linkedin.svg";
+import { LinkedinIcon, EmailIcon, GithubIcon } from "../assets/Icons";
 
-function UserCard({ user, background, title }) {
+function UserCard({ user, background, title, personalText }) {
+  console.log(background);
   const handleEmailClick = () => {
     window.location.href = `mailto:${user.email}`;
   };
@@ -25,18 +24,17 @@ function UserCard({ user, background, title }) {
       <div className="imgFrame">
         <img src={user.avatar} alt={user.first_name} />
       </div>
-      <div className="CardHead" id={background}></div>
+      <div
+        className="CardHead"
+        style={{ backgroundColor: `${background}` }}
+      ></div>
       <div className="CardBodyWrapper">
         <div className="CardBodyContainer">
           <div className="descriptionHead">
             <h3>{`${user.first_name} ${user.last_name}`}</h3>
             <h4>{title}</h4>
           </div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
-          </p>
+          <p>{personalText}</p>
           <div className="IconContainer">
             <EmailIcon onClick={handleEmailClick} />
             <GithubIcon onClick={handleGithubClick} />
