@@ -4,8 +4,8 @@
   justify-content: center;
   background-color: #eaeced;
   width: 100%;
-  height: calc(100vh);
-  margin-top: 4.2rem;
+  height: calc(100vh - 5rem);
+  margin-top: 3.5rem;
 }
 
 .ContentContainer404 {
