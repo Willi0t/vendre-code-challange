@@ -1,0 +1,49 @@
+.employeesContainer {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowIcon {
+  height: 30px;
+  width: 30px;
+  fill: black;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+#leftButton {
+  transform: scaleX(-1);
+}
+
+.AppContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  gap: 1.8rem;
+}
+
+.PageNumbersContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 100%;
+}
+
+.highlighted {
+  font-size: 2rem;
+  color: black;
+  opacity: 50%;
+}
+
+.PageNumbers {
+  font-size: 1rem;
+  color: black;
+  opacity: 20%;
+}

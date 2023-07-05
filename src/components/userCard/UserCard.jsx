@@ -1,6 +1,6 @@
 import React from "react";
 import "./userCard.css";
-import { LinkedinIcon, EmailIcon, GithubIcon } from "../assets/Icons";
+import { LinkedinIcon, EmailIcon, GithubIcon } from "../../assets/icons";
 
 function UserCard({ user, background, title, personalText }) {
   console.log(background);
