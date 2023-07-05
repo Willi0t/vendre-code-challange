@@ -22,7 +22,14 @@ function NotFound404() {
           </h4>
           <p>
             But I doubt he can fix it since they are gone for a reason. Try this
-            page instead.
+            page instead or take a look at the README.MD on{" "}
+            <a
+              href="https://github.com/Willi0t/vendre-code-challange"
+              target="_blank"
+            >
+              Github
+            </a>{" "}
+            for more info
           </p>
           <button onClick={handleClick}>go back</button>
         </div>
