@@ -1,13 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
-import Employees from "./components/employees/Employees.jsx";
+import EmployeesPage from "./Pages/EmployeesPage";
+import Page404 from "./Pages/Page404";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Employees />
-    </>
+    <div>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<EmployeesPage />} />
+          <Route path="/produkt" element={<Page404 />} />
+          <Route path="/partners" element={<Page404 />} />
+          <Route path="/priser" element={<Page404 />} />
+          <Route path="/kundcase" element={<Page404 />} />
+          <Route path="/kunskap" element={<Page404 />} />
+          <Route path="/anställda" element={<EmployeesPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

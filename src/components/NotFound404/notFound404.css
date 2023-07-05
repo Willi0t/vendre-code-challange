@@ -1,0 +1,63 @@
+.Container404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeced;
+  width: 100%;
+  height: calc(100vh);
+  margin-top: 4.2rem;
+}
+
+.ContentContainer404 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 50%;
+}
+
+.ContentContainer404 img {
+  width: 25rem;
+  height: 35rem;
+}
+/* top right bottom left*/
+.Textbox404 {
+  padding: 8rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Textbox404 h3 {
+  font-family: "Comfortaa", cursive;
+  color: #373e4c;
+  text-align: center;
+  font-size: 7rem;
+}
+
+.Textbox404 h4 {
+  font-family: "Comfortaa", cursive;
+  color: #6d6c81;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Textbox404 p {
+  font-family: "Comfortaa", cursive;
+  color: #7f8184;
+  margin-top: 2rem;
+}
+
+/* top right bottom left*/
+.Textbox404 button {
+  margin-top: 1.5rem;
+  font-family: "Play", sans-serif;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  background-color: #686f8a;
+  color: #ffffff;
+}
