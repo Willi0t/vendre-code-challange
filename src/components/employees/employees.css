@@ -1,6 +1,33 @@
 .employeesContainer {
-  margin-top: 10rem;
+  min-height: calc(100vh - 10rem);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(182, 167, 231, 0.21332282913165268) 0%,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(255, 255, 255, 1) 92%
+  );
+}
+
+.employeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.employeHeader h2 {
+  font-size: 4.3rem;
+  font-family: "Comfortaa", cursive;
+}
+
+.flexRow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +37,7 @@
   height: 30px;
   width: 30px;
   fill: black;
-  opacity: 80%;
+  opacity: 65%;
   cursor: pointer;
 }
 
@@ -24,7 +51,6 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 100%;
   gap: 1.8rem;
 }
 

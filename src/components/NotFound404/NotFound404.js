@@ -1,7 +1,9 @@
 import React from "react";
 import "./notFound404.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Image404 from "../../assets/images/404Image-transp.png";
+
+// ... (import statements)
 
 function NotFound404() {
   const navigate = useNavigate();
@@ -13,7 +15,7 @@ function NotFound404() {
   return (
     <div className="Container404">
       <div className="ContentContainer404">
-        <img src={Image404} alt="404 Image" />
+        <img src={Image404} alt="notfound 404" />
         <div className="Textbox404">
           <h3>404</h3>
           <h4>
@@ -26,6 +28,7 @@ function NotFound404() {
             <a
               href="https://github.com/Willi0t/vendre-code-challange"
               target="_blank"
+              rel="noreferrer"
             >
               Github
             </a>{" "}

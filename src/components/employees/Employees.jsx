@@ -48,32 +48,37 @@ function Employees() {
 
   return (
     <div className="employeesContainer">
-      <ArrowIcon
-        className="arrowIcon"
-        id="leftButton"
-        onClick={nextPage}
-      ></ArrowIcon>
-      <div className="AppContainer">
-        {currentCards.map((user) => (
-          <UserCard
-            key={user.id}
-            user={user}
-            background={user.color}
-            title={user.title}
-            personalText={user.personalText}
-          />
-        ))}
-
-        <div className="PageNumbersContainer">
-          <span className={currentPage === 1 ? "highlighted" : "PageNumbers"}>
-            1
-          </span>
-          <span className={currentPage === 2 ? "highlighted" : "PageNumbers"}>
-            2
-          </span>
-        </div>
+      <div className="employeHeader">
+        <h2>Våra Anställda</h2>
       </div>
-      <ArrowIcon className="arrowIcon" onClick={nextPage}></ArrowIcon>
+      <div className="flexRow">
+        <ArrowIcon
+          className="arrowIcon"
+          id="leftButton"
+          onClick={nextPage}
+        ></ArrowIcon>
+        <div className="AppContainer">
+          {currentCards.map((user) => (
+            <UserCard
+              key={user.id}
+              user={user}
+              background={user.color}
+              title={user.title}
+              personalText={user.personalText}
+            />
+          ))}
+
+          <div className="PageNumbersContainer">
+            <span className={currentPage === 1 ? "highlighted" : "PageNumbers"}>
+              1
+            </span>
+            <span className={currentPage === 2 ? "highlighted" : "PageNumbers"}>
+              2
+            </span>
+          </div>
+        </div>
+        <ArrowIcon className="arrowIcon" onClick={nextPage}></ArrowIcon>
+      </div>
     </div>
   );
 }
