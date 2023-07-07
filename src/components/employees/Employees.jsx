@@ -57,7 +57,7 @@ function Employees() {
           id="leftButton"
           onClick={nextPage}
         ></ArrowIcon>
-        <div className="AppContainer">
+        <div className="employeesCardContainer">
           {currentCards.map((user) => (
             <UserCard
               key={user.id}

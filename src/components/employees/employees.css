@@ -1,5 +1,4 @@
 .employeesContainer {
-  min-height: calc(100vh - 10rem);
   margin-top: 5rem;
   margin-bottom: 5rem;
   width: 100%;
@@ -45,7 +44,7 @@
   transform: scaleX(-1);
 }
 
-.AppContainer {
+.employeesCardContainer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -72,4 +71,23 @@
   font-size: 1rem;
   color: black;
   opacity: 20%;
+}
+
+/* Desktop common */
+@media screen and (max-width: 1920px) {
+  .employeesContainer {
+    margin-top: 3.7rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba(182, 167, 231, 0.21332282913165268) 0%,
+      rgba(255, 255, 255, 1) 27%,
+      rgba(255, 255, 255, 1) 92%
+    );
+  }
 }

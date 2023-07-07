@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 5rem;
+  height: 5rem;
   padding: 0em 25%;
   background: transparent;
   border-top: #f1f1f1;
@@ -17,4 +17,10 @@
   font-size: 0.75rem;
   color: #616161;
   text-align: center;
+}
+
+@media screen and (max-width: 1920px) {
+  .footerContainer {
+    min-height: 3.7rem;
+  }
 }

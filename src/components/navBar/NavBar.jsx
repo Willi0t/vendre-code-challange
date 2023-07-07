@@ -11,22 +11,34 @@ function NavBar() {
         <div className="navigationContainer">
           <ul>
             <li>
-              <Link to="/produkt">product</Link>
+              <Link className="listItems" to="/produkt">
+                product
+              </Link>
             </li>
             <li>
-              <Link to="/partners">partners</Link>
+              <Link className="listItems" to="/partners">
+                partners
+              </Link>
             </li>
             <li>
-              <Link to="/priser">priser</Link>
+              <Link className="listItems" to="/priser">
+                priser
+              </Link>
             </li>
             <li>
-              <Link to="/kundcase">kundcase</Link>
+              <Link className="listItems" to="/kundcase">
+                kundcase
+              </Link>
             </li>
             <li>
-              <Link to="/kunskap">kunskap</Link>
+              <Link className="listItems" to="/kunskap">
+                kunskap
+              </Link>
             </li>
             <li>
-              <Link to="/anställda">anställda</Link>
+              <Link className="listItems" to="/anställda">
+                anställda
+              </Link>
             </li>
           </ul>
         </div>

@@ -8,10 +8,9 @@
     rgba(255, 255, 255, 1) 37%,
     rgba(255, 255, 255, 1) 92%
   );
-
   width: 100%;
   min-height: calc(100vh - 10rem);
-  margin-top: 3.6rem;
+  margin-top: 5rem;
 }
 
 .ContentContainer404 {
@@ -60,7 +59,7 @@
   margin-top: 1.5rem;
   font-family: "Play", sans-serif;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 4%;
   padding: 0.7rem 1.5rem;
   font-size: 2rem;
   border: none;
@@ -68,4 +67,35 @@
   outline: inherit;
   background-color: #686f8a;
   color: #ffffff;
+}
+
+/* Desktop common */
+@media screen and (max-width: 1920px) {
+  .Container404 {
+    min-height: calc(100vh - 8.7rem);
+    margin-top: 3.7rem;
+  }
+
+  .ContentContainer404 img {
+    width: calc(25rem / 1.33);
+    height: calc(35rem / 1.33);
+  }
+
+  .Textbox404 h3 {
+    font-size: calc(7rem / 1.33);
+  }
+
+  .Textbox404 h4 {
+    font-size: calc(2rem / 1.33);
+  }
+
+  .Textbox404 p {
+    margin-top: calc(2rem / 1.33);
+  }
+
+  .Textbox404 button {
+    margin-top: calc(1.5rem / 1.33);
+    padding: calc(0.7rem / 1.2) calc(1.5rem / 1.33);
+    font-size: calc(2rem / 1.33);
+  }
 }

@@ -1,4 +1,11 @@
 .App {
   width: 100vw;
-  min-height: calc(100vh - 10rem);
+  height: calc(100vh - 5rem);
+}
+
+@media screen and (max-width: 1920px) {
+  .App {
+    width: 100vw;
+    min-height: calc(100vh - 7.4rem);
+  }
 }
