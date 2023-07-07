@@ -27,6 +27,7 @@ function Employees() {
               ...userMapping[user.first_name + user.last_name],
             };
           }
+          return null; // Add this line to return a value when the if condition is not met
         });
 
         setUsers(usersWithTitles);
