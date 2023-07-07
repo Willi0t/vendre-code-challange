@@ -77,17 +77,39 @@
 @media screen and (max-width: 1920px) {
   .employeesContainer {
     margin-top: 3.7rem;
-    margin-bottom: 5rem;
-    width: 100%;
+    margin-bottom: 3.7rem;
+  }
+
+  .employeHeader {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(
-      180deg,
-      rgba(182, 167, 231, 0.21332282913165268) 0%,
-      rgba(255, 255, 255, 1) 27%,
-      rgba(255, 255, 255, 1) 92%
-    );
+    min-height: calc(30vh / 1.33);
+  }
+
+  .employeHeader h2 {
+    font-size: calc(4.3rem / 1.33);
+  }
+
+  .arrowIcon {
+    height: calc(30px / 1.33);
+    width: calc(30px / 1.33);
+  }
+
+  .employeesCardContainer {
+    width: 55%;
+    gap: calc(1.8rem / 1.33);
+  }
+
+  .PageNumbersContainer {
+    min-height: calc(100px / 1.33);
+  }
+
+  .highlighted {
+    font-size: calc(2rem / 1.33);
+  }
+
+  .PageNumbers {
+    font-size: calc(1rem / 1.33);
   }
 }
