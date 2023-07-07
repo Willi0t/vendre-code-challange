@@ -2,16 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eaeced;
+  background: rgb(234, 236, 237);
+  background: linear-gradient(
+    180deg,
+    rgba(234, 236, 237, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   width: 100%;
-  height: calc(100vh - 5rem);
+  min-height: calc(100vh - 10rem);
   margin-top: 3.6rem;
 }
 
 .ContentContainer404 {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 45%;
   height: 50%;
 }
 
@@ -21,10 +26,11 @@
 }
 /* top right bottom left*/
 .Textbox404 {
-  padding: 8rem 15rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .Textbox404 h3 {

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 import NavBar from "./components/navBar/NavBar";
 import EmployeesPage from "./Pages/EmployeesPage";
 import Page404 from "./Pages/Page404";
+import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -10,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/kunskap" element={<Page404 />} />
           <Route path="/anställda" element={<EmployeesPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

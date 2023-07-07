@@ -1,7 +1,7 @@
 import React from "react";
 import "./notFound404.css";
 import { Link, useNavigate } from "react-router-dom";
-import Image404 from "../../assets/images/404Image2.png";
+import Image404 from "../../assets/images/404Image-transp.png";
 
 function NotFound404() {
   const navigate = useNavigate();
@@ -21,15 +21,15 @@ function NotFound404() {
             on the case.
           </h4>
           <p>
-            But I doubt he can fix it since they are gone for a reason. you can
-            read more about on{" "}
+            But I doubt he can find them since they are gone for a reason. you
+            can read more about it on my{" "}
             <a
               href="https://github.com/Willi0t/vendre-code-challange"
               target="_blank"
             >
               Github
             </a>{" "}
-            or go back
+            repo or go back
           </p>
           <button onClick={handleClick}>go back</button>
         </div>
