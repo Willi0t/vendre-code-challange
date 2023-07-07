@@ -21,15 +21,15 @@ function NotFound404() {
             on the case.
           </h4>
           <p>
-            But I doubt he can fix it since they are gone for a reason. Try this
-            page instead or take a look at the README.MD on{" "}
+            But I doubt he can fix it since they are gone for a reason. you can
+            read more about on{" "}
             <a
               href="https://github.com/Willi0t/vendre-code-challange"
               target="_blank"
             >
               Github
             </a>{" "}
-            for more info
+            or go back
           </p>
           <button onClick={handleClick}>go back</button>
         </div>

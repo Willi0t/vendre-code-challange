@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
 import EmployeesPage from "./Pages/EmployeesPage";
 import Page404 from "./Pages/Page404";
 
 function App() {
+  useEffect(() => {
+    document.title = "My Page Title";
+  }, []);
+
   return (
     <div>
       <BrowserRouter>
