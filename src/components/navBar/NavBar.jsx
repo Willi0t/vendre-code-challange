@@ -10,6 +10,10 @@ function NavBar() {
     setIsActive(!isActive);
   };
 
+  const closeMenu = () => {
+    setIsActive(false);
+  };
+
   return (
     <div className="navBarWrapper">
       <div className="navBarContainer">
@@ -17,32 +21,32 @@ function NavBar() {
         <nav className="navigationContainer">
           <ul>
             <li>
-              <Link className="listItems" to="/produkt">
+              <Link className="listItems" to="/produkt" onClick={closeMenu}>
                 product
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/partners">
+              <Link className="listItems" to="/partners" onClick={closeMenu}>
                 partners
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/priser">
+              <Link className="listItems" to="/priser" onClick={closeMenu}>
                 priser
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/kundcase">
+              <Link className="listItems" to="/kundcase" onClick={closeMenu}>
                 kundcase
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/kunskap">
+              <Link className="listItems" to="/kunskap" onClick={closeMenu}>
                 kunskap
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/anställda">
+              <Link className="listItems" to="/anställda" onClick={closeMenu}>
                 anställda
               </Link>
             </li>
@@ -60,32 +64,32 @@ function NavBar() {
         >
           <ul>
             <li>
-              <Link className="listItems" to="/produkt">
+              <Link className="listItems" to="/produkt" onClick={closeMenu}>
                 product
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/partners">
+              <Link className="listItems" to="/partners" onClick={closeMenu}>
                 partners
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/priser">
+              <Link className="listItems" to="/priser" onClick={closeMenu}>
                 priser
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/kundcase">
+              <Link className="listItems" to="/kundcase" onClick={closeMenu}>
                 kundcase
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/kunskap">
+              <Link className="listItems" to="/kunskap" onClick={closeMenu}>
                 kunskap
               </Link>
             </li>
             <li>
-              <Link className="listItems" to="/anställda">
+              <Link className="listItems" to="/anställda" onClick={closeMenu}>
                 anställda
               </Link>
             </li>
