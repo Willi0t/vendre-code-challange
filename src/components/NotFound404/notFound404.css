@@ -129,3 +129,36 @@
     font-size: calc(2rem / 1.8);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .Container404 {
+    min-height: calc(100vh - 7.4rem);
+    margin-top: 3.7rem;
+  }
+  .ContentContainer404 {
+    width: 80%;
+  }
+  .ContentContainer404 img {
+    width: calc(25rem / 3);
+    height: calc(35rem / 3);
+  }
+
+  .Textbox404 h3 {
+    font-size: calc(7rem / 3);
+  }
+
+  .Textbox404 h4 {
+    font-size: calc(2rem / 3);
+  }
+
+  .Textbox404 p {
+    font-size: 0.5rem;
+    margin-top: calc(2rem / 3);
+  }
+
+  .Textbox404 button {
+    margin-top: calc(1.5rem / 3);
+    padding: calc(0.7rem / 1.2) calc(1.5rem / 3);
+    font-size: calc(2rem / 3);
+  }
+}
