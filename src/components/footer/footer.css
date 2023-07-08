@@ -29,3 +29,10 @@
     font-size: calc(0.75rem / 1.33);
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .footerContainer {
+    height: 3.7rem;
+    padding: 0rem 6%;
+  }
+}

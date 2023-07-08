@@ -49,7 +49,7 @@
 .hamburger {
   display: none;
 }
-
+/* top right bottom left*/
 .mobileNavigationContainer {
   display: block;
   position: fixed;
@@ -118,7 +118,81 @@
     padding: calc(1rem / 1.33);
   }
 }
+@media screen and (max-width: 1280px) {
+  .navigationContainer {
+    display: none;
+  }
 
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger::before,
+  .bar,
+  .hamburger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  .mobileNavigationContainer {
+    padding: 0px;
+  }
+
+  .mobileNavigationContainer ul {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    border-bottom: #d4d4d4;
+    border-style: none none solid none;
+    border-width: 1px;
+  }
+
+  .mobileNavigationContainer li {
+    padding: 0.8rem 0rem;
+  }
+
+  /* top right bottom left*/
+
+  .demobutton {
+    display: none;
+  }
+
+  .listItems {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+}
 @media screen and (max-width: 767px) {
   .navigationContainer {
     display: none;
@@ -158,6 +232,17 @@
 
   .hamburger.is-active .bar {
     opacity: 0;
+  }
+
+  .mobileNavigationContainer ul {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: #b3b3b3;
+    border-style: none none solid none;
+    border-width: 1px;
   }
 
   .mobileNavigationContainer li {

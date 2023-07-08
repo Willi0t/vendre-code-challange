@@ -8,6 +8,9 @@ function Employees() {
   const [users, setUsers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(6);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const [scrollAnimation, setScrollAnimation] = useState(false);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -27,7 +30,7 @@ function Employees() {
               ...userMapping[user.first_name + user.last_name],
             };
           }
-          return null; // Add this line to return a value when the if condition is not met
+          return null;
         });
 
         setUsers(usersWithTitles);
@@ -40,7 +43,21 @@ function Employees() {
   }, []);
 
   const nextPage = () => {
-    setCurrentPage((nextPage) => (nextPage + 1) % 2 || 2);
+    setScrollAnimation(true);
+    setCurrentPage((currentPage) => (currentPage === 1 ? 2 : 1));
+  };
+
+  const handleSwipe = () => {
+    const swipeDistance = touchStart - touchEnd;
+    const swipeThreshold = 50; // Minimum distance required for a swipe
+
+    if (swipeDistance > swipeThreshold) {
+      // Swiped from right to left
+      nextPage();
+    } else if (swipeDistance < -swipeThreshold) {
+      // Swiped from left to right
+      nextPage();
+    }
   };
 
   const indexOfLastCard = currentPage * cardsPerPage;
@@ -52,9 +69,16 @@ function Employees() {
       <div className="employeHeader">
         <h2>Våra Anställda</h2>
       </div>
-      <div className="flexRow">
+      <div
+        className="flexRow"
+        onTouchStart={(e) => setTouchStart(e.touches[0].clientX)}
+        onTouchEnd={(e) => {
+          setTouchEnd(e.changedTouches[0].clientX);
+          handleSwipe();
+        }}
+      >
         <ArrowIcon
-          className="arrowIcon"
+          className={`arrowIcon ${scrollAnimation ? "scrollAnimation" : ""}`}
           id="leftButton"
           onClick={nextPage}
         ></ArrowIcon>
@@ -68,14 +92,22 @@ function Employees() {
               personalText={user.personalText}
             />
           ))}
-
           <div className="PageNumbersContainer">
+            <ArrowIcon
+              className="arrowIconMobile"
+              id="leftButton"
+              onClick={nextPage}
+            ></ArrowIcon>
             <span className={currentPage === 1 ? "highlighted" : "PageNumbers"}>
               1
             </span>
             <span className={currentPage === 2 ? "highlighted" : "PageNumbers"}>
               2
             </span>
+            <ArrowIcon
+              className="arrowIconMobile"
+              onClick={nextPage}
+            ></ArrowIcon>
           </div>
         </div>
         <ArrowIcon className="arrowIcon" onClick={nextPage}></ArrowIcon>
