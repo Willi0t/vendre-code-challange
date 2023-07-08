@@ -183,6 +183,7 @@
   }
 
   .arrowIconMobile {
+    display: block;
     margin: 0rem 2rem;
     height: calc(30px / 1.33);
     width: calc(30px / 1.33);
