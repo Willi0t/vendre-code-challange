@@ -19,6 +19,7 @@
   text-align: center;
 }
 
+/* Desktop common */
 @media screen and (max-width: 1920px) {
   .footerContainer {
     height: 3.7rem;
@@ -30,6 +31,7 @@
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 767px) {
   .footerContainer {
     height: 3.7rem;

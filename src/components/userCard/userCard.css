@@ -43,7 +43,6 @@
   background-color: white;
 }
 
-/* top right bottom left*/
 .CardBodyContainer {
   padding: 3rem 3rem 0rem 3rem;
   height: 100%;
@@ -123,7 +122,6 @@
     height: calc(6.25rem / 1.33);
   }
 
-  /* top right bottom left*/
   .CardBodyContainer {
     padding: 2.25rem 2.25rem 0rem 2.25rem;
     height: 100%;
@@ -155,6 +153,7 @@
     height: calc(1.3rem / 1.33);
   }
 
+  /* Laptop/Desktop small */
   @media only screen and (max-width: 1550px) {
     .cardContainer {
       width: calc(20rem / 1.33);
@@ -175,7 +174,6 @@
       height: calc(6.25rem / 1.33);
     }
 
-    /* top right bottom left*/
     .CardBodyContainer {
       padding: 2.25rem 2.25rem 0rem 2.25rem;
       height: 100%;

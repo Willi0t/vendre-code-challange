@@ -118,6 +118,7 @@
     padding: calc(1rem / 1.33);
   }
 }
+/* Tablet */
 @media screen and (max-width: 1280px) {
   .navigationContainer {
     display: none;
@@ -178,8 +179,6 @@
     padding: 0.8rem 0rem;
   }
 
-  /* top right bottom left*/
-
   .demobutton {
     display: none;
   }
@@ -193,6 +192,8 @@
     color: black;
   }
 }
+
+/* Mobile */
 @media screen and (max-width: 767px) {
   .navigationContainer {
     display: none;
