@@ -154,4 +154,57 @@
     width: calc(1.3rem / 1.33);
     height: calc(1.3rem / 1.33);
   }
+
+  @media only screen and (max-width: 1550px) {
+    .cardContainer {
+      width: calc(20rem / 1.33);
+      height: calc(27rem / 1.33);
+    }
+
+    .imgFrame {
+      width: calc(6.875rem / 1.33);
+      height: calc(6.875rem / 1.33);
+      position: absolute;
+      top: calc(3.5rem / 1.33);
+      border-radius: 50%;
+    }
+
+    .cardContainer img {
+      border-radius: 50%;
+      width: calc(6.25rem / 1.33);
+      height: calc(6.25rem / 1.33);
+    }
+
+    /* top right bottom left*/
+    .CardBodyContainer {
+      padding: 2.25rem 2.25rem 0rem 2.25rem;
+      height: 100%;
+    }
+
+    .descriptionHead h3 {
+      font-size: calc(1.5rem / 1.33);
+    }
+
+    .descriptionHead h4 {
+      font-size: calc(1rem / 1.33);
+      margin: calc(0.4rem / 1.33) auto auto auto;
+    }
+
+    .CardBodyContainer p {
+      margin-top: calc(1rem / 1.33);
+      font-style: italic;
+      font-size: calc(0.9rem / 1.33);
+    }
+
+    .IconContainer {
+      margin-top: calc(1rem / 1.33);
+      width: 60%;
+      height: 20%;
+    }
+
+    .IconContainer svg {
+      width: calc(1.3rem / 1.33);
+      height: calc(1.3rem / 1.33);
+    }
+  }
 }

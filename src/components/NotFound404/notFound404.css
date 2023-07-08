@@ -72,7 +72,7 @@
 /* Desktop common */
 @media screen and (max-width: 1920px) {
   .Container404 {
-    min-height: calc(100vh - 8.7rem);
+    min-height: calc(100vh - 7.4rem);
     margin-top: 3.7rem;
   }
 
@@ -97,5 +97,35 @@
     margin-top: calc(1.5rem / 1.33);
     padding: calc(0.7rem / 1.2) calc(1.5rem / 1.33);
     font-size: calc(2rem / 1.33);
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .Container404 {
+    min-height: calc(100vh - 5.4rem);
+    margin-top: 2.7rem;
+  }
+
+  .ContentContainer404 img {
+    width: calc(25rem / 1.8);
+    height: calc(35rem / 1.8);
+  }
+
+  .Textbox404 h3 {
+    font-size: calc(7rem / 1.8);
+  }
+
+  .Textbox404 h4 {
+    font-size: calc(2rem / 1.8);
+  }
+
+  .Textbox404 p {
+    margin-top: calc(2rem / 1.8);
+  }
+
+  .Textbox404 button {
+    margin-top: calc(1.5rem / 1.8);
+    padding: calc(0.7rem / 1.2) calc(1.5rem / 1.8);
+    font-size: calc(2rem / 1.8);
   }
 }

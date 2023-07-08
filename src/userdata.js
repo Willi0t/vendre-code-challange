@@ -36,8 +36,8 @@ const userMapping = {
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
   },
   LindsayFerguson: {
-    title: "Copy writer",
-    color: "#d8e2dc",
+    title: "UX-Designer",
+    color: "#c6def1",
     personalText:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
   },
@@ -48,8 +48,8 @@ const userMapping = {
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
   },
   ByronFields: {
-    title: "UX-Designer",
-    color: "#c6def1",
+    title: "Copy writer",
+    color: "#d8e2dc",
     personalText:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
   },

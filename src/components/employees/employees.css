@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 .employeHeader h2 {
@@ -33,6 +33,7 @@
 }
 
 .arrowIcon {
+  margin-bottom: 100px;
   height: 30px;
   width: 30px;
   fill: black;
@@ -74,17 +75,14 @@
 }
 
 /* Desktop common */
-@media screen and (max-width: 1920px) {
+@media only screen and (max-width: 1920px) {
   .employeesContainer {
     margin-top: 3.7rem;
     margin-bottom: 3.7rem;
   }
 
   .employeHeader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(30vh / 1.33);
+    min-height: calc(40vh / 1.33);
   }
 
   .employeHeader h2 {
@@ -98,6 +96,43 @@
 
   .employeesCardContainer {
     width: 55%;
+    gap: calc(1.8rem / 1.33);
+  }
+
+  .PageNumbersContainer {
+    min-height: calc(100px / 1.33);
+  }
+
+  .highlighted {
+    font-size: calc(2rem / 1.33);
+  }
+
+  .PageNumbers {
+    font-size: calc(1rem / 1.33);
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .employeesContainer {
+    margin-top: 3.7rem;
+    margin-bottom: 3.7rem;
+  }
+
+  .employeHeader {
+    min-height: 50vh;
+  }
+
+  .employeHeader h2 {
+    font-size: calc(4.3rem / 1.33);
+  }
+
+  .arrowIcon {
+    height: calc(30px / 1.33);
+    width: calc(30px / 1.33);
+  }
+
+  .employeesCardContainer {
+    width: 65%;
     gap: calc(1.8rem / 1.33);
   }
 

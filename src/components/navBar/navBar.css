@@ -14,11 +14,12 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .navBarContainer {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  margin: 0rem 2.5rem;
+  padding: 0rem 2.5rem;
 }
 
 .navBarContainer img {
@@ -27,7 +28,7 @@
 }
 
 /* top right bottom left*/
-.navigationContainer ul {
+.navBarContainer ul {
   list-style-type: none;
   margin: 0;
 }
@@ -45,7 +46,29 @@
   color: black;
 }
 
-.navBarContainer button {
+.hamburger {
+  display: none;
+}
+
+.mobileNavigationContainer {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 101%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 9;
+  background-color: #f9f9f9;
+  margin-top: 3.6rem;
+  padding: 3rem 0rem 0rem 2rem;
+  transition: 0.4s;
+}
+
+.mobileNavigationContainer.is-active {
+  left: 0%;
+}
+
+.demobutton {
   background-color: black;
   border-radius: 6%;
   color: white;
@@ -87,11 +110,72 @@
   }
 
   .listItems {
-    font-size: calc(1.4rem / 1.33);
+    font-size: calc(1.3rem / 1.33);
   }
 
   .navBarContainer p {
     font-size: calc(1rem / 1.33);
     padding: calc(1rem / 1.33);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigationContainer {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger::before,
+  .bar,
+  .hamburger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .mobileNavigationContainer li {
+    padding: 0.8rem 0rem;
+  }
+
+  /* top right bottom left*/
+
+  .demobutton {
+    display: none;
+  }
+
+  .listItems {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
   }
 }

@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {
-    document.title = "My Page Title";
+    document.title = "Vendre | Anställda";
   }, []);
 
   return (

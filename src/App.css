@@ -3,6 +3,7 @@
   height: calc(100vh - 5rem);
 }
 
+/* Desktop common */
 @media screen and (max-width: 1920px) {
   .App {
     width: 100vw;
