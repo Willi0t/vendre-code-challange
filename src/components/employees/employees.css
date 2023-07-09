@@ -125,7 +125,7 @@
   }
 
   .employeHeader {
-    min-height: 50vh;
+    min-height: 25vh;
   }
 
   .employeHeader h2 {
@@ -167,13 +167,14 @@
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 767px) {
   .employeesCardContainer {
     width: 80%;
   }
 
   .employeHeader h2 {
-    font-size: calc(4.3rem / 1.33);
+    font-size: calc(4.3rem / 1.5);
     text-align: center;
     font-family: "Comfortaa", cursive;
   }

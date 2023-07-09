@@ -10,7 +10,6 @@ function Employees() {
   const [cardsPerPage] = useState(6);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const [scrollAnimation, setScrollAnimation] = useState(false);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -43,7 +42,6 @@ function Employees() {
   }, []);
 
   const nextPage = () => {
-    setScrollAnimation(true);
     setCurrentPage((currentPage) => (currentPage === 1 ? 2 : 1));
   };
 
@@ -78,7 +76,7 @@ function Employees() {
         }}
       >
         <ArrowIcon
-          className={`arrowIcon ${scrollAnimation ? "scrollAnimation" : ""}`}
+          className="arrowIcon"
           id="leftButton"
           onClick={nextPage}
         ></ArrowIcon>
