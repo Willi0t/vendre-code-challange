@@ -45,22 +45,21 @@ function Employees() {
     setCurrentPage((currentPage) => (currentPage === 1 ? 2 : 1));
   };
 
-  const handleSwipe = () => {
-    const swipeDistance = touchStart - touchEnd;
-    const swipeThreshold = 50; // Minimum distance required for a swipe
-
-    if (swipeDistance > swipeThreshold) {
-      // Swiped from right to left
-      nextPage();
-    } else if (swipeDistance < -swipeThreshold) {
-      // Swiped from left to right
-      nextPage();
-    }
-  };
-
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
   const currentCards = users.slice(indexOfFirstCard, indexOfLastCard);
+
+  // enabeling swiping
+  const handleSwipe = () => {
+    const swipeDistance = touchStart - touchEnd;
+    const swipeThreshold = 50;
+
+    if (swipeDistance > swipeThreshold) {
+      nextPage();
+    } else if (swipeDistance < -swipeThreshold) {
+      nextPage();
+    }
+  };
 
   return (
     <div className="employeesContainer">
