@@ -32,7 +32,7 @@ function NotFound404() {
             >
               Github
             </a>{" "}
-            repo or go back
+            repo under Additional info or go back
           </p>
           <button onClick={handleClick}>go back</button>
         </div>
