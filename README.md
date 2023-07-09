@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+# Vendre code challange
+I was given a task to design a responsive employees' page in one week. I was provided with an API to work with from reqres.in. The data from the API did not include titles, so I added that to the object in the frontend. That would make the components more realistic in terms of how the logic would have been if the data were included.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The website has a few elements that were taken from Vendre's website to make the employees' page fit as if it was made for them. The NavBar component and Footer are recreated from their own. The footer also includes a copyright mark: "Copyright © 2023 Vendre". This page does not have a copyright. It is simply there to look like the real page.
+
+Images from Vendres website 2023:
+![image](https://github.com/Willi0t/vendre-code-challange/assets/113394429/9c0427c6-57f3-4b69-ac6c-72a80952caa0)
+
+----
+
+![image](https://github.com/Willi0t/vendre-code-challange/assets/113394429/b4d7368e-adb7-45d1-b562-3ac7bc829e70)
+
+The page also has pages, per request from Vendre. This makes the interaction for mobile feel a bit clunky. If I were to redo it, I would skip the pages for mobile and just have a straight flow from top to bottom. However, due to time constraints, I only made one version of the app.
+
+The navbar component has multiple pages, but since my task was to create one page, they are just routed to a 404 page. They are there to make the design look realistic and have no function.
+
+the 404page art work is borrowed from Halvor Nordrum.
+
+The icons in the cards have a similar function. They are set to go to LinkedIn and GitHub, but they will return a 404 page since the users are not real.
+
+# the Email from vendre
+
+KODUPPGIFT
+
+På vår hemsida vill vi visa en lista över våra anställda (dummydata). Data kan hittas på följande slutpunkt: https://reqres.in/api/users
+
+Bonuspoäng om du lägger till paginering enligt hur api:n fungerar.
+För att få sida2: https://reqres.in/api/users?page=2
+
+Dessa är några måste enligt designteamet:
+
+Runda profilbilder
+Namnet, följt av en kontaktlänk som leder till de anställdas e-postadress
+Utöver det kan du designa sidan hur du vill
+Sidan ska vara responsiv som i exemplet nedan:
+
+https://www.dropbox.com/scl/fi/9wno72766m40wmcrxpunc/Kodtest.mov?rlkey=a4mpcueupwopxu0vt6i1raevs&dl=...
+
+👊DEADLINE ÄR 9 JULI👊
+
+## Page demo:
+
+https://vendre-code-challange.netlify.app
+
+![image](https://github.com/Willi0t/vendre-code-challange/assets/113394429/9e43b021-fa3e-49df-814b-2acf8776f29f)
+
+![image](https://github.com/Willi0t/vendre-code-challange/assets/113394429/247520e0-e02a-4b17-b370-a3b802315a54)
+
 
 ## Available Scripts
 
@@ -28,43 +73,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
