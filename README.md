@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# Vendre code challange
+i was given a task to design a responsive empolyees page in one week. i was given a api to work with from reqres.in. the data from the api did not include titles so i added that to the obejct in the frontend. that would make the components more realistic in terms of how the logic would have been if the data would incloud it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+the website has a few elements that were taken from vendres website to make the employees page fit as if it was made for them. the NavBar component and Footer is recreated from thier own. the footer also includes a copy right mark "Copyright © 2023 Vendre". this page has not copy right. it is simply there to look like the real page
+
+Images from Vendres website 2023:
+![image](https://github.com/Willi0t/vendre-code-challange/assets/113394429/9c0427c6-57f3-4b69-ac6c-72a80952caa0)
+
+
+![image](https://github.com/Willi0t/vendre-code-challange/assets/113394429/b4d7368e-adb7-45d1-b562-3ac7bc829e70)
+
+# the Email from vendre
+
+KODUPPGIFT
+
+På vår hemsida vill vi visa en lista över våra anställda (dummydata). Data kan hittas på följande slutpunkt: https://reqres.in/api/users
+
+Bonuspoäng om du lägger till paginering enligt hur api:n fungerar.
+För att få sida2: https://reqres.in/api/users?page=2
+
+Dessa är några måste enligt designteamet:
+
+Runda profilbilder
+Namnet, följt av en kontaktlänk som leder till de anställdas e-postadress
+Utöver det kan du designa sidan hur du vill
+Sidan ska vara responsiv som i exemplet nedan:
+
+https://www.dropbox.com/scl/fi/9wno72766m40wmcrxpunc/Kodtest.mov?rlkey=a4mpcueupwopxu0vt6i1raevs&dl=...
+
+👊DEADLINE ÄR 9 JULI👊
 
 ## Available Scripts
 
