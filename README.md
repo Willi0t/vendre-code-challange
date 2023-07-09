@@ -12,6 +12,7 @@ Images from Vendres website 2023:
 
 The page also has pages, per request from Vendre. This makes the interaction for mobile feel a bit clunky. If I were to redo it, I would skip the pages for mobile and just have a straight flow from top to bottom. However, due to time constraints, I only made one version of the app.
 
+#Additional info
 The navbar component has multiple pages, but since my task was to create one page, they are just routed to a 404 page. They are there to make the design look realistic and have no function.
 
 the 404page art work is borrowed from Halvor Nordrum.
